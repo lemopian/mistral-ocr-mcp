@@ -25,7 +25,7 @@ A Model Context Protocol (MCP) server that provides OCR (Optical Character Recog
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/lemopian/mistral-ocr-mcp.git
    cd mistral-ocr-mcp
    ```
 
