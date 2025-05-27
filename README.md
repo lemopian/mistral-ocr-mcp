@@ -55,7 +55,7 @@ Add the following configuration to your Claude Desktop config file:
         "--directory",
         "/path/to/mistral-ocr-mcp",
         "run",
-        "server.py"
+        "main.py"
       ]
     }
   }
@@ -96,18 +96,24 @@ Please extract the text from this document: /path/to/your/document.pdf
 ### Running the server directly
 
 ```bash
-uv run server.py
+uv run main.py
 ```
 
 ### Project structure
 
 ```
 mistral-ocr-mcp/
-├── server.py          # MCP server implementation
-├── extractor.py       # Mistral OCR functionality
-├── pyproject.toml     # Project dependencies
-├── .env              # Environment variables (create this)
-└── README.md         # This file
+├── mistral_ocr/          # Package directory
+│   ├── __init__.py       # Package initialization
+│   └── extractor.py      # Mistral OCR functionality
+├── docs/                 # Documentation
+│   └── flowchart.png     # Architecture flowchart
+├── main.py               # MCP server implementation
+├── pyproject.toml        # Project dependencies and configuration
+├── uv.lock              # Dependency lock file
+├── .env                 # Environment variables (create this)
+├── .gitignore           # Git ignore rules
+└── README.md            # This file
 ```
 
 ## Environment Variables

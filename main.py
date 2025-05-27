@@ -2,7 +2,7 @@
 
 from typing import Any, Dict
 from mcp.server.fastmcp import FastMCP
-from extractor import MistralOCR
+from mistral_ocr.extractor import MistralOCR
 
 
 mcp_server = FastMCP(name="mistral-ocr")
