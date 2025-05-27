@@ -2,9 +2,11 @@
 
 A Model Context Protocol (MCP) server that provides OCR (Optical Character Recognition) functionality using Mistral's OCR API. This server allows you to extract text content from PDF files and images through MCP-compatible clients like Cursor and Claude Desktop.
 
-## Flowchart
+> 📖 **For more context and practical usage examples, read the related article:** [How I Use Mistral Document AI to Consolidate My Notes](https://medium.com/@leundeuange/how-i-use-mistral-document-ai-to-consolidate-my-notes-16416c7b7225)
 
-![flow](docs/flowchart.png)
+## Usage example flowchart
+
+![flow](docs/with_notion_flowchart.png)
 
 ## Features
 
