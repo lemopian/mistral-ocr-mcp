@@ -4,21 +4,7 @@ A Model Context Protocol (MCP) server that provides OCR (Optical Character Recog
 
 ## Flowchart
 
-```mermaid
----
-config:
-  theme: mc
-  look: neo
-id: ea72b068-989a-4066-9d14-cd30d6ccdb81
----
-flowchart LR
-    A["**Image** or **PDF** of handwritten notes"] --> B@{ label: "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAAC9CAMAAACTb6i8AAAAsVBMVEX////hBQD/ggX/rwD6UA//2AD/jhb/sQj/qwDtgoH+fhj6RAD6ThL/fwD/rQD/1gD/4a7/nVTrQCr/yyD/ewD/++P/+dz/4mH/5Gr/9uP/89z/8eT/7Nz+7OX6SgD/0YT/mEb7hGX9uqj7jW79xbXvl5b/9vX/1pb/yQD/4KvrPCP/0Uz/7c7/1Ij/2Zr/iQD/kiz+hir/kUD6NgDte3fsUkPthoXzl471oZjrcW/ujo5VP/1mAAACWElEQVR4nO3aR1KCYRQFUcwBxYgZcwBzwLj/hTlsqxxwq3wFWnYv4N3vP0xpNJLaS1NBm9GtyraSZy1tlG5qQVqQFqQFaUFakBakBWlBWpAWpAVpQVqQFqQFaUFakBakBWlBWpAWpAVpQVqQFqQFaUFakBakBWlBWpAW1E42f6vFVK3Fdnct6Go5qHcdLV73kmNXybO67VqL2VbQbNRBtHiRHYuetVNsMVFVbFG3qAWLWrCoBYtasKgFi1qwqAWLWrCoBYtasKgFi1qwqAWLWrCoBYtasKgFi1qwqAWLWrCoBYtasKgFi1qwqAWLWrCoBYtasKgFi1qwqAWLWrCoBYtasFhs0ZqpauImWrytW2zVWuzeTZd1f5h0Xzd4t1drsT5e1mJW3eD677UYelqQFqQFaUFakBakBWlBWpAWpAVpQVqQFqQFaUFakBakBWlBWpAWpAVpQVqQFqQFaUFakBakBWlBWtBoLCr/fFR3q9xiPuhhJekxOTX/GN16SE4VW3SaC4PbP4punSa3msfRrZP95FbnJ5/+rU5zcnCxRXArtkhuaaGFFlpo8TUtSAvSgrQgLUgL0oK0IC1IC9KCtCAtSAvSgrQgLUgL0oK0IC1IC9KCtCAtSAvSgrQgLejPWzw1B/c0Eou5pP7latDzS3Lr9TTpLTn18pw867IffeJ5ozE27PrRT3Q29HdpQVqQFqQFaUFakBakBWlBWpAWpAVpQVqQFqQFaUFakBakBWlBWpAWpAVpQVqQFqQFaUFakBakBWlBWpAWNAqL98jiY+jvOo/e9V/6BKKquLLdyJ1kAAAAAElFTkSuQmCC\" width=\"1000\"> **OCR** Processing - Created MistralAI MCP server" }
-    B --> C("Notion Page Creation - Official Notion MCP server")
-    C --> D@{ label: "<img src=\"https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg\" width=\"30\"> Notes saved in Notion page" }
-    A@{ shape: doc}
-    B@{ shape: rounded}
-    D@{ shape: rect}
-```
+![flow](docs/flowchart.png)
 
 ## Features
 
@@ -29,8 +15,8 @@ flowchart LR
 
 ## Prerequisites
 
-- Python 3.10.1 or higher (but less than 3.13)
 - [uv](https://docs.astral.sh/uv/) package manager
+- Python 3.10.1 or higher (but less than 3.13)
 - Mistral API : [https://console.mistral.ai/api-keys](https://console.mistral.ai/api-keys)
 
 ## Installation
