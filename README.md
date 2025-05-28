@@ -18,8 +18,8 @@ A Model Context Protocol (MCP) server that provides OCR (Optical Character Recog
 ## Prerequisites
 
 - [uv](https://docs.astral.sh/uv/) package manager
-- Python 3.10.1 or higher (but less than 3.13)
-- Mistral API : [https://console.mistral.ai/api-keys](https://console.mistral.ai/api-keys)
+- Python 3.10.1 or higher
+- Mistral API Key : [https://console.mistral.ai/api-keys](https://console.mistral.ai/api-keys)
 
 ## Installation
 
@@ -42,11 +42,7 @@ A Model Context Protocol (MCP) server that provides OCR (Optical Character Recog
 
 ## Configuration for MCP Clients
 
-### Claude Desktop
-
-Add the following configuration to your Claude Desktop config file:
-
-**Location:** `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
+Add the following configuration to your MCP client config file:
 
 ```json
 {
@@ -66,9 +62,6 @@ Add the following configuration to your Claude Desktop config file:
 
 **Important:** Replace `/path/to/mistral-ocr-mcp` with the actual path to your cloned repository.
 
-### Cursor
-
-For Cursor, add similar configuration to your MCP settings. The exact location may vary depending on your Cursor setup.
 
 ## Usage
 
@@ -88,7 +81,7 @@ Extracts text content from PDF files and images.
 - PDF files (`.pdf`)
 - Image files (`.jpg`, `.jpeg`, `.png`, `.tiff`, `.bmp`)
 
-**Example usage in Claude Desktop:**
+**Example usage :**
 ```
 Please extract the text from this document: /path/to/your/document.pdf
 ```
